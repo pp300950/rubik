@@ -1,0 +1,43 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 350px;
+	width: 350px;
+	background-color: #f1f1f1;
+}
+.box {
+	height: 80px;
+	width: 80px;
+	margin: 10px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}	
+.box.disabled {
+	cursor: not-allowed;
+}
+.color-options {
+    display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+.color-option {
+	height: 30px;
+	width: 30px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;	
+}
+.color-option{
+    height: 60px;
+    width: 60px;
+}
+.color-option:hover,.box:hover {
+	transform: scale(1.2);
+}
+	
